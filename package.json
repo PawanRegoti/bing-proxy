@@ -1,0 +1,26 @@
+{
+  "name": "bing-wallpapers",
+  "version": "1.0.0",
+  "description": "service to get bing wallpapers",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PawanRegoti/bing-wallpapers.git"
+  },
+  "keywords": [
+    "bing",
+    "wallpapers"
+  ],
+  "author": "Pawan Kumar Regoti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PawanRegoti/bing-wallpapers/issues"
+  },
+  "homepage": "https://github.com/PawanRegoti/bing-wallpapers#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
