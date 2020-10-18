@@ -18,5 +18,4 @@ var server = http.createServer(function(req, res) {
   proxy.web(req, res, { changeOrigin: true, target: BING_URL });
 });
 
-console.log("listening on port 3030")
 server.listen(3030);
