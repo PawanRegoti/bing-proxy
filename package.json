@@ -2,8 +2,14 @@
   "name": "bing-wallpapers",
   "version": "1.0.0",
   "description": "service to get bing wallpapers",
+  "type": "module",
   "main": "index.js",
+  "engines": {
+    "node": "12.18.3"
+  },
   "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js",
     "test": "test"
   },
   "repository": {
@@ -21,6 +27,9 @@
   },
   "homepage": "https://github.com/PawanRegoti/bing-wallpapers#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "http-proxy": "^1.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.5"
   }
 }
