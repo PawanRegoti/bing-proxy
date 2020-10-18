@@ -1,11 +1,12 @@
 import http from 'http'
 import httpProxy from 'http-proxy'
 
+const port = process.env.PORT || 3030
 const BING_URL = 'https://www.bing.com/'
 //
 // Create a proxy server with custom application logic
 //
-const proxy = httpProxy.createProxyServer({});
+const proxy = httpProxy.createProxyServer({})
 
 //
 // Create your custom server and just call `proxy.web()` to proxy
@@ -15,7 +16,8 @@ const proxy = httpProxy.createProxyServer({});
 var server = http.createServer(function(req, res) {
   // You can define here your custom logic to handle the request
   // and then proxy the request.
-  proxy.web(req, res, { changeOrigin: true, target: BING_URL });
-});
+  proxy.web(req, res, { changeOrigin: true, target: BING_URL })
+})
 
-server.listen(process.env.PORT || 3030);
+console.log('app listening on port', port)
+server.listen(port)
