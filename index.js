@@ -1,7 +1,7 @@
 import http from 'http'
 import httpProxy from 'http-proxy'
 
-const BING_URL = 'https://www.bing.com/HPImageArchive.aspx'
+const BING_URL = 'https://www.bing.com/'
 //
 // Create a proxy server with custom application logic
 //
