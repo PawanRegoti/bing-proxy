@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/PawanRegoti/bing-wallpapers#readme",
   "dependencies": {
+    "cors-anywhere": "^0.4.4",
     "http-proxy": "^1.18.1"
   },
   "devDependencies": {
